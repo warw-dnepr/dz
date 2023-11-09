@@ -10,15 +10,46 @@
 <body>
 
    <script>
-      let func = function (n) {
-         let count = 0;
-         for (i = 1; i <= n; i++) {
-            let num = Number(prompt('digit'))
-            count += num;
+      let func = function () {
+         let year = prompt('Рік народження ?');
+         let city = prompt('В якому місті він живеш ?')
+
+         if (year == null || city == null) {
+            if (year == null) {
+               alert('Шкода, що Ви не захотіли ввести свoю дату народження')
+            } else if (city == null) {
+               alert('Шкода, що Ви не захотіли ввести свoе місто')
+            }
+
+         } else {
+            if (city.toLocaleLowerCase() == 'київ') {
+               alert(`Твій вік: ${2023 - year} Ти живеш у столиці України в місті: Київ`)
+            } else if (city.toLocaleLowerCase() == 'лондон') {
+               alert(`Твій вік: ${2023 - year} Ти живеш у столиці Англіі в місті: Лондон`)
+
+            } else if (city.toLocaleLowerCase() == 'вашингтон') {
+               alert(`Твій вік: ${2023 - year} Ти живеш у столиці Америки в місті: Вашингтон`)
+            } else {
+               alert(`Твій вік: ${2023 - year} Ти живеш у місті: ${city.toUpperCase()}`)
+            }
          }
-         alert(`Сума чисел: ${count}, Середне значення: ${count / n}`)
+         let sport = prompt('Улюблений вид спорту ?')
+         if (sport == null) {
+            alert('Шкода, що Ви не захотіли ввести свій спорт')
+         } else {
+            if (sport.toLocaleLowerCase() == 'бокс') {
+               alert(`Круто! Хочеш стати як Клічко ?`)
+            } else if (sport.toLocaleLowerCase() == 'футбол') {
+               alert(`Круто! Хочеш стати як Шевченко ?`)
+            } else if (sport.toLocaleLowerCase() == 'теніс') {
+               alert(`Круто! Хочеш стати як Світоліна ?`)
+            } else {
+               alert(`Улюблений вид спорту: ${sport.toUpperCase()}`)
+            }
+         }
+         alert(`Твій вік: ${2023 - year} Ти живеш у місті: ${city.toUpperCase()} Улюблений вид спорту: ${sport.toUpperCase()}`)
       }
-      func(3)
+      func()
 
 
    </script>
