@@ -9,50 +9,110 @@
 
 <body>
 
+   <p id="p"></p>
    <script>
-      let func = function () {
-         let year = prompt('Рік народження ?');
-         let city = prompt('В якому місті він живеш ?')
+      let arr = [];
 
-         if (year == null || city == null) {
-            if (year == null) {
-               alert('Шкода, що Ви не захотіли ввести свoю дату народження')
-            } else if (city == null) {
-               alert('Шкода, що Ви не захотіли ввести свoе місто')
-            }
+      /////////1
+      // for (i = 10; i <= 20; i++) {
+      //    arr += [i] + ',';
+      // }
+      // p.innerHTML = arr;
 
-         } else {
-            if (city.toLocaleLowerCase() == 'київ') {
-               alert(`Твій вік: ${2023 - year} Ти живеш у столиці України в місті: Київ`)
-            } else if (city.toLocaleLowerCase() == 'лондон') {
-               alert(`Твій вік: ${2023 - year} Ти живеш у столиці Англіі в місті: Лондон`)
+      ///////2
+      // for (i = 10; i <= 20; i++) {
+      //    arr += [i] ** 2 + ',';
+      // }
+      // p.innerHTML = arr;
 
-            } else if (city.toLocaleLowerCase() == 'вашингтон') {
-               alert(`Твій вік: ${2023 - year} Ти живеш у столиці Америки в місті: Вашингтон`)
-            } else {
-               alert(`Твій вік: ${2023 - year} Ти живеш у місті: ${city.toUpperCase()}`)
-            }
-         }
-         let sport = prompt('Улюблений вид спорту ?')
-         if (sport == null) {
-            alert('Шкода, що Ви не захотіли ввести свій спорт')
-         } else {
-            if (sport.toLocaleLowerCase() == 'бокс') {
-               alert(`Круто! Хочеш стати як Клічко ?`)
-            } else if (sport.toLocaleLowerCase() == 'футбол') {
-               alert(`Круто! Хочеш стати як Шевченко ?`)
-            } else if (sport.toLocaleLowerCase() == 'теніс') {
-               alert(`Круто! Хочеш стати як Світоліна ?`)
-            } else {
-               alert(`Улюблений вид спорту: ${sport.toUpperCase()}`)
-            }
-         }
-         alert(`Твій вік: ${2023 - year} Ти живеш у місті: ${city.toUpperCase()} Улюблений вид спорту: ${sport.toUpperCase()}`)
-      }
-      func()
+      ////////3
+      // for (i = 1; i <= 10; i++) {
+      //    arr += `7 x ${i} = ` + 7 * i + '</br>'
+      // }
+      // p.innerHTML = arr;
+
+      /////4
+      // let num = 0;
+      // for (i = 1; i <= 15; i++) {
+      //    num += i
+
+      // }
+      // p.innerHTML = num;
+
+      ////////5
+      // let num = 15;
+      // for (i = 16; i <= 35; i++) {
+      //    num *= i
+
+      // }
+      // p.innerHTML = num;
+
+
+      /////6
+      // let num = 0;
+      // for (i = 1; i <= 500; i++) {
+      //    num += i
+      // }
+      // p.innerHTML = num / 500;
+
+
+      /////7
+      // let num = 0;
+      // for (i = 30; i <= 80; i++) {
+      //    if (i % 2 == 0) num += i;
+      // }
+      // p.innerHTML = num;
+
+
+      /////8
+      // for (i = 100; i <= 200; i++) {
+      //    if (i % 3 == 0) arr += i + ',';
+      // }
+      // p.innerHTML = arr;
+
+      ////////9
+      // let num = 15;
+      // for (i = 0; i <= 100; i++) {
+      //    if (num % i == 0) arr += i
+      // }
+      // console.log(arr)
+
+      ////////10
+      // let num = 15;
+      // for (i = 0; i <= 100; i++) {
+      //    if (num % i == 0) arr += i
+      // }
+
+      // console.log(arr.length)
+
+      ////////11
+      // let num = 15;
+      // let sum = 0
+
+      // for (i = 0; i <= 100; i++) {
+      //    if (num % i == 0) arr.push(i)
+      // }
+
+      // for (a of arr) {
+      //    sum += a
+      // }
+      // p.innerHTML = sum;
+
+
+
+      ////12
+      // for (i = 1; i <= 10; i++) {
+      //    arr += `</br>`
+      //    for (j = 1; j <= 10; j++) {
+      //       arr += `${i} x ${j} = ${i * j}</br>`
+      //    }
+      // }
+      // p.innerHTML = arr;
+
 
 
    </script>
+
 </body>
 
 </html>
