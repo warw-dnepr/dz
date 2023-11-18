@@ -11,108 +11,94 @@
 
    <p id="p"></p>
    <script>
-      let arr = [];
 
-      /////////1
-      // for (i = 10; i <= 20; i++) {
-      //    arr += [i] + ',';
-      // }
-      // p.innerHTML = arr;
+      let arr = [16, -27, 54, -4, 72, -56, 47, 4, -16, 25, -37, 46, 4, -51, 27, -63, 4, -54, 76, -4, 12, -35, 4, 47];
 
-      ///////2
-      // for (i = 10; i <= 20; i++) {
-      //    arr += [i] ** 2 + ',';
-      // }
-      // p.innerHTML = arr;
+      // Знайти суму та кількість позитивних елементів.
 
-      ////////3
-      // for (i = 1; i <= 10; i++) {
-      //    arr += `7 x ${i} = ` + 7 * i + '</br>'
-      // }
-      // p.innerHTML = arr;
+      // let int = arr.filter((i) => {
+      //    return i >= 0
+      // });
+      // p.innerHTML = int
 
-      /////4
-      // let num = 0;
-      // for (i = 1; i <= 15; i++) {
-      //    num += i
-
-      // }
-      // p.innerHTML = num;
-
-      ////////5
-      // let num = 15;
-      // for (i = 16; i <= 35; i++) {
-      //    num *= i
-
-      // }
-      // p.innerHTML = num;
-
-
-      /////6
-      // let num = 0;
-      // for (i = 1; i <= 500; i++) {
-      //    num += i
-      // }
-      // p.innerHTML = num / 500;
-
-
-      /////7
-      // let num = 0;
-      // for (i = 30; i <= 80; i++) {
-      //    if (i % 2 == 0) num += i;
-      // }
-      // p.innerHTML = num;
-
-
-      /////8
-      // for (i = 100; i <= 200; i++) {
-      //    if (i % 3 == 0) arr += i + ',';
-      // }
-      // p.innerHTML = arr;
-
-      ////////9
-      // let num = 15;
-      // for (i = 0; i <= 100; i++) {
-      //    if (num % i == 0) arr += i
-      // }
-      // console.log(arr)
-
-      ////////10
-      // let num = 15;
-      // for (i = 0; i <= 100; i++) {
-      //    if (num % i == 0) arr += i
+      // Знайти мінімальний елемент масиву та його порядковий номер.
+      // for (i = 0; i <= arr.length; i++) {
+      //    if (arr[i] == Math.min(...arr)) p.innerHTML = `min element ${arr[i]} index: ${i}`
       // }
 
-      // console.log(arr.length)
-
-      ////////11
-      // let num = 15;
-      // let sum = 0
-
-      // for (i = 0; i <= 100; i++) {
-      //    if (num % i == 0) arr.push(i)
+      // Знайти максимальний елемент масиву та його порядковий номер.
+      // for (i = 0; i <= arr.length; i++) {
+      //    if (arr[i] == Math.max(...arr)) p.innerHTML = `max element ${arr[i]} index: ${i}`
       // }
 
-      // for (a of arr) {
-      //    sum += a
-      // }
-      // p.innerHTML = sum;
 
-
-
-      ////12
-      // for (i = 1; i <= 10; i++) {
-      //    arr += `</br>`
-      //    for (j = 1; j <= 10; j++) {
-      //       arr += `${i} x ${j} = ${i * j}</br>`
+      // Визначити кількість негативних елементів.
+      // count = 0;
+      // for (i = 0; i <= arr.length; i++) {
+      //    if (arr[i] < 0) {
+      //       count++
       //    }
       // }
-      // p.innerHTML = arr;
+      // p.innerHTML = count
+
+      // Знайти кількість непарних позитивних елементів.
+      // count = 0;
+      // for (i = 0; i <= arr.length; i++) {
+      //    if (arr[i] > 0 && arr[i] % 2 != 0) {
+      //       count++
+      //    }
+      // }
+      // p.innerHTML = count
+
+      // Знайти кількість парних позитивних елементів.
+      // count = 0;
+      // for (i = 0; i <= arr.length; i++) {
+      //    if (arr[i] > 0 && arr[i] % 2 == 0) {
+      //       count++
+      //    }
+      // }
+      // p.innerHTML = count
+
+      // Знайти суму парних позитивних елементів.
+      // count = 0;
+      // for (i = 0; i <= arr.length; i++) {
+      //    if (arr[i] > 0 && arr[i] % 2 == 0) {
+      //       count += arr[i]
+      //    }
+      // }
+      // p.innerHTML = count
+
+      // Знайти суму непарних позитивних елементів.
+      // count = 0;
+      // for (i = 0; i <= arr.length; i++) {
+      //    if (arr[i] > 0 && arr[i] % 2 != 0) {
+      //       count+=arr[i]
+      //    }
+      // }
+      // p.innerHTML = count
+
+      // Знайти добуток позитивних елементів.
+      // count = 1;
+      // for (i = 0; i <= arr.length; i++) {
+      //    if (arr[i] > 0 ) {
+      //       count*=arr[i]
+      //    }
+      // }
+      // p.innerHTML = count
 
 
+      // Знайти найбільший серед елементів масиву, остальні обнулити.
+      // let newArr=[]
+      // for (i = 0; i <= arr.length; i++) {
+      //    if (arr[i] == Math.max(...arr)) {
+      //       newArr.push(arr[i])
+      //       arr.length = [];
+      //       arr.push(newArr)
+      //    }
+      // }
+      // p.innerHTML = arr
 
    </script>
-
 </body>
 
 </html>
